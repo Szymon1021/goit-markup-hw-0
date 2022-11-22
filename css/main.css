@@ -656,9 +656,8 @@ a:focus {
 .footer {
   background-color: #2f303a;
   color: var(--color-secondary);
+  width: auto;
   position: absolute;
-  width: 1600px;
-  left: 0px;
 }
 
 .footer__style {
