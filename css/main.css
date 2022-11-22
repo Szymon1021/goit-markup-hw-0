@@ -675,6 +675,7 @@ input {
   font-size: 26px;
   letter-spacing: 0.03em;
   line-height: 1.2em;
+  padding-left: 0px;
 }
 
 .footer__logo-style {
@@ -690,6 +691,7 @@ input {
   font-style: normal;
   padding-bottom: 60px;
   padding-top: 20px;
+  padding-left: 0px;
 }
 
 .footer__list {
@@ -712,7 +714,7 @@ input {
 }
 
 .footer-socials {
-  padding-left: 70px;
+  padding-left: 60px;
   padding-top: 72px;
 }
 
