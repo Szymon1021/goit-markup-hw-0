@@ -670,7 +670,6 @@ input {
 
 .footer__logo {
   padding-top: 60px;
-  padding-left: 215px;
   padding-bottom: 0;
   font-family: Raleway;
   font-weight: 700;
@@ -690,9 +689,8 @@ input {
 
 .footer__address {
   font-style: normal;
-  padding-top: 20px;
-  padding-left: 215px;
   padding-bottom: 60px;
+  padding-top: 20px;
 }
 
 .footer__list {
