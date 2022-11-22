@@ -656,7 +656,7 @@ a:focus {
 .footer {
   background-color: #2f303a;
   color: var(--color-secondary);
-  width: auto;
+  width: 1600px;
 }
 
 .footer__style {
