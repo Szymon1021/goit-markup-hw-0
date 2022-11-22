@@ -120,12 +120,11 @@
 }
 
 .input-box {
-    transition: outline 250ms, border 250ms;
+    transition: border 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-box:focus {
-    outline: var(--brand-color);
     border: 1px solid var(--brand-color);
 }
 
