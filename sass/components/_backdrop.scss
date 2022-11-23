@@ -31,9 +31,8 @@
 }
 
 .backdrop__close {
-    position: absolute;
-    top: 8px;
-    right: 8px;
+    position: relative;
+    
     width: 30px;
     height: 30px;
     background-color: transparent;
@@ -50,8 +49,16 @@
 
 .backdrop__close {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier (0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier (0.4, 0, 0.2, 1);
 }
+.backdrop__close_svg {
+    color: var(--color-secondary);
+    pointer-events: none;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
 
 .backdrop__title {
     padding-top: 40px;
