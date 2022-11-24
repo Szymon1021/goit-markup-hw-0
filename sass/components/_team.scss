@@ -42,6 +42,7 @@
     font-size: 16px;
 }
 }
+
 .team__socials {
     display: flex;
     align-items: center;
@@ -51,9 +52,9 @@
     margin-right: auto;
     gap: 10px;
     list-style: none;
-}
 
-.team__socials-item {
+
+&-item {
     display: inline-flex;
     padding: 12px;
     width: 44px;
@@ -62,15 +63,17 @@
     fill: var(--icon-bg);
     transition: background-color 250ms, fill 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.team__socials-item:not(:last-child) {
+
+&:not(:last-child) {
     margin-right: 10px;
 }
 
-.team__socials-item:hover,
-.team__socials-item:focus,
-.team__socials-item:active {
+&:hover,
+&:focus,
+&:active {
     background-color: var(--brand-color);
     fill: var(--color-white);
+}
+}
 }
