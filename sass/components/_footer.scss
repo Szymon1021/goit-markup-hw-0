@@ -1,11 +1,11 @@
 .footer {
     background-color: #2f303a;
     color: var(--color-secondary);
+    &__style {
+        display: flex;
+    }
 }
 
-.footer__style {
-    display: flex;
-}
 
 .footer__logo {
     padding-top: 60px;
@@ -16,16 +16,16 @@
     letter-spacing: 0.03em;
     line-height: 1.2em;
     padding-left: 0px;
+    &-style {
+        text-decoration: none;
+        color: var(--brand-color);
+    }
+    &-span {
+        color: var(--color-white);
+    }
 }
 
-.footer__logo-style {
-    text-decoration: none;
-    color: var(--brand-color);
-}
 
-.footer__logo-span {
-    color: var(--color-white);
-}
 
 .footer__address {
     font-style: normal;
