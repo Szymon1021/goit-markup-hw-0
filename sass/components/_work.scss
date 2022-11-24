@@ -1,8 +1,8 @@
 .work {
     padding-bottom: 94px;
-}
 
-.work__title {
+
+&__title {
     font-size: 36px;
     line-height: 1.17em;
     font-weight: 700;
@@ -10,12 +10,12 @@
     padding-bottom: 50px;
 }
 
-.work__list {
+&__list {
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
-
+}
 .work__item {
     position: relative;
 }

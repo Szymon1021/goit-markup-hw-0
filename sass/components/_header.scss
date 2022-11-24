@@ -1,5 +1,16 @@
 .header {
     border-bottom: 1px solid var(--line);
+    &__style {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    &__nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 0;
+        }
 }
 
 .header .container {
@@ -8,18 +19,7 @@
     justify-content: space-between;
 }
 
-.header__style {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
 
-.header__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 0;
-}
 
 .logo {
     margin-right: 90px;
@@ -29,25 +29,28 @@
     letter-spacing: 0.03em;
     line-height: 1.2em;
     text-decoration: none;
+   &__header {
+        color: var(--brand-color);
+    }
 }
 
-.logo__header {
-    color: var(--brand-color);
-}
+
 
 .header__menu {
     display: flex;
     align-items: center;
     list-style: none;
     text-decoration: none;
-}
+   
 
-.header__menu a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 16px;
-    font-weight: 500;
 }
+ .header__menu a {
+     text-decoration: none;
+     color: #000000;
+     font-size: 16px;
+     font-weight: 500;
+ }
+
 
 .header__menu-list:not(:last-child) {
     margin-right: 30px;
@@ -78,22 +81,24 @@
     font-size: 14px;
     line-height: 24px;
     list-style: none;
+    &-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+    &-link {
+            color: var(--color-third);
+            line-height: 1.14em;
+            margin-right: 30px;
+            transition: color 250ms, fill 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            }
 }
 
-.header__contact-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.header__contact-link {
-    color: var(--color-third);
-    line-height: 1.14em;
-    margin-right: 30px;
-    transition: color 250ms, fill 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    text-decoration: none;
-}
+
+
 
 .header__contact-icon {
     margin-right: 10px;

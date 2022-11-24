@@ -1,8 +1,8 @@
 .team {
     background-color: #f5f4fa;
-}
 
-.team__title {
+
+&__title {
     font-size: 36px;
     line-height: 1.17em;
     font-weight: 700;
@@ -11,12 +11,12 @@
     padding-bottom: 50px;
 }
 
-.team__person {
+&__person {
     display: flex;
     justify-content: space-between;
 }
 
-.team__list {
+&__list {
     list-style-type: none;
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -25,7 +25,7 @@
     background-color: #fff;
 }
 
-.team__name {
+&__name {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.142em;
@@ -34,14 +34,14 @@
     padding-top: 30px;
 }
 
-.team__occupation {
+&__occupation {
     letter-spacing: 0.03em;
     line-height: 1.187em;
     color: var(--color-third);
     padding-bottom: 16px;
     font-size: 16px;
 }
-
+}
 .team__socials {
     display: flex;
     align-items: center;
