@@ -32,30 +32,26 @@
 
 .backdrop__close {
     position: relative;
-    
     width: 30px;
     height: 30px;
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
-}
-
-.backdrop__close:hover,
-.backdrop__close:focus {
-    background: var(--brand-color);
-    color: var(--color-white);
-}
-
-.backdrop__close {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier (0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        background: var(--brand-color);
+        color: var(--color-white);
+        }
 }
-.backdrop__close_svg {
+
+.backdrop__close-svg {
     color: var(--color-secondary);
     pointer-events: none;
     position: absolute;
-    top: 5px;
+    top: 8px;
     left: 5px;
 }
 
@@ -129,11 +125,10 @@
 .input-box {
     transition: outline 250ms, border 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.input-box:focus {
-    outline: var(--brand-color);
-    border: 1px solid var(--brand-color);
+&:focus {
+        outline: var(--brand-color);
+        border: 1px solid var(--brand-color);
+    }
 }
 
 .modal-form__item textarea {
