@@ -1,59 +1,29 @@
-* {
-  color: black;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Roboto", "Raleway", sans-serif;
-  color: #212121;
-  border: 0;
-  background-color: var(--color-white);
-  margin: 0 auto;
-}
-
-img {
-  display: block;
-  object-fit: cover;
-}
-
-a:hover,
-a:focus {
-  color: var(--brand-color);
-}
-
 .container {
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  align-items: center;
-  padding: 0 15px;
+  max-width: 100%;
+  padding: 0px 10px;
 }
 
-.section {
-  padding: 94px 0px 94px 0px;
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    padding: 0 57px;
+    margin: 0 auto;
+  }
 }
-
-.flex {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 202px;
+    margin: 0 auto;
+  }
 }
-
-.active::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 48px;
-  height: 4px;
-  border-radius: 10px 10px 10px 10px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
 }
-
-input {
-  outline: none;
-}
-
 :root {
   --brand-color: #2196f3;
   --color-secondary: #060404;
@@ -181,51 +151,24 @@ input {
 
 .main-section {
   background-color: #2f303a;
-  background-image: url("../images/team.jpg");
+  background-image: url("/images/mobile_bg/Header_bg_mobile2x.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  box-sizing: border-box;
-  height: 600px;
-  max-width: 1600px;
-  margin: 0 auto;
-}
-.main-section__text {
-  display: flex;
-  align-items: center;
-  height: 600px;
-  justify-content: center;
-  flex-direction: column;
-}
-.main-section__descripton {
-  color: #fff;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.363em;
-  letter-spacing: 0.06em;
-  text-align: center;
-  text-transform: uppercase;
-  width: 696px;
-  margin-bottom: 30px;
+  background-size: 480px 580px;
+  padding-left: 0px;
+  padding-top: 60px;
 }
 
-.main-section__button {
-  width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  background-color: var(--brand-color);
-  cursor: pointer;
+.main-section__descripton {
   color: #fff;
-  box-shadow: 0px 4px 4px rgb 0, 0, 0, 0.15;
-  font-size: 16px;
-  border: 1px solid var(--brand-color);
-}
-.main-section__button-text {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  /* or 162% */
+  text-align: center;
   letter-spacing: 0.06em;
-  color: var(--color-white);
+  text-transform: uppercase;
 }
 
 .backdrop {
